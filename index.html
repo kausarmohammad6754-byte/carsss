@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxe Motors | Premium Car Showroom</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            LUXE<span>MOTORS</span>
+            <small>PREMIUM AUTOMOBILES</small>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#cars">Our Cars</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-btn">Book a Test Drive ↗</a>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="tag">WELCOME TO LUXE MOTORS</span>
+
+            <h1>
+                Drive Your
+                <span>Dream.</span>
+            </h1>
+
+            <p>
+                Discover exceptional automobiles that combine
+                performance, elegance and innovation.
+                Your next journey begins here.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#cars" class="btn">
+                    Explore Collection ↗
+                </a>
+
+                <a href="#about" class="outline-btn">
+                    Discover Our Story
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <h2>150+</h2>
+                    <p>Premium Cars</p>
+                </div>
+
+                <div>
+                    <h2>25+</h2>
+                    <p>Luxury Brands</p>
+                </div>
+
+                <div>
+                    <h2>10+</h2>
+                    <p>Years Experience</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-caption">
+            <span>EXCELLENCE IN EVERY DRIVE</span>
+            <span>01 / 04</span>
+        </div>
+
+    </section>
+
+
+    <!-- BENEFITS -->
+
+    <section class="benefits">
+
+        <div>
+            <span>✧</span>
+            <h3>Premium Collection</h3>
+            <p>Exceptional cars for every journey.</p>
+        </div>
+
+        <div>
+            <span>◇</span>
+            <h3>Trusted Quality</h3>
+            <p>Carefully selected automobiles.</p>
+        </div>
+
+        <div>
+            <span>♧</span>
+            <h3>Easy Financing</h3>
+            <p>Flexible options for eligible buyers.</p>
+        </div>
+
+        <div>
+            <span>♡</span>
+            <h3>Personal Service</h3>
+            <p>Your satisfaction comes first.</p>
+        </div>
+
+    </section>
+
+
+    <!-- CARS SECTION -->
+
+    <section class="cars-section section" id="cars">
+
+        <div class="section-heading">
+
+            <span class="tag">OUR COLLECTION</span>
+
+            <h2>Find Your <span>Perfect Drive.</span></h2>
+
+            <p>
+                Explore our selection of premium and luxury vehicles.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH AND FILTER -->
+
+        <div class="car-controls">
+
+            <input
+                type="search"
+                id="carSearch"
+                placeholder="Search your dream car..."
+                aria-label="Search cars"
+            >
+
+            <select id="brandFilter" aria-label="Filter by brand">
+
+                <option value="all">All Brands</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes-Benz</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Audi">Audi</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Lamborghini">Lamborghini</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- CAR CARDS -->
+
+        <div class="car-grid" id="carGrid">
+
+
+            <!-- CAR 1 -->
+
+            <article class="car-card"
+                     data-brand="BMW"
+                     data-name="BMW M4 Competition">
+
+                <div class="car-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=85"
+                        alt="BMW luxury sports car"
+                        loading="lazy"
+                    >
+
+                    <span class="car-badge">FEATURED</span>
+
+                    <button class="favorite"
+                            aria-label="Add BMW to favourites"
+                            aria-pressed="false">♡</button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <span class="car-category">SPORTS COUPE</span>
+
+                    <h3>BMW M4 Competition</h3>
+
+                    <div class="car-specs">
+                        <span>⚙ Automatic</span>
+                        <span>⛽ Petrol</span>
+                    </div>
+
+                    <div class="car-price">
+                        <strong>PKR 4.5 Crore</strong>
+                        <span>Sample price</span>
+                    </div>
+
+                    <button class="details-btn"
+                            data-car="BMW M4 Competition">
+                        View Details ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 2 -->
+
+            <article class="car-card"
+                     data-brand="Mercedes"
+                     data-name="Mercedes Benz S-Class">
+
+                <div class="car-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=85"
+                        alt="Mercedes-Benz luxury automobile"
+                        loading="lazy"
+                    >
+
+                    <span class="car-badge">LUXURY</span>
+
+                    <button class="favorite"
+                            aria-label="Add Mercedes to favourites"
+                            aria-pressed="false">♡</button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <span class="car-category">LUXURY SEDAN</span>
+
+                    <h3>Mercedes-Benz S-Class</h3>
+
+                    <div class="car-specs">
+                        <span>⚙ Automatic</span>
+                        <span>⛽ Petrol</span>
+                    </div>
+
+                    <div class="car-price">
+                        <strong>PKR 12 Crore</strong>
+                        <span>Sample price</span>
+                    </div>
+
+                    <button class="details-btn"
+                            data-car="Mercedes-Benz S-Class">
+                        View Details ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 3 -->
+
+            <article class="car-card"
+                     data-brand="Porsche"
+                     data-name="Porsche 911 Carrera">
+
+                <div class="car-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85"
+                        alt="Porsche 911 sports car"
+                        loading="lazy"
+                    >
+
+                    <span class="car-badge">SPORT</span>
+
+                    <button class="favorite"
+                            aria-label="Add Porsche to favourites"
+                            aria-pressed="false">♡</button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <span class="car-category">SPORTS CAR</span>
+
+                    <h3>Porsche 911 Carrera</h3>
+
+                    <div class="car-specs">
+                        <span>⚙ Automatic</span>
+                        <span>⛽ Petrol</span>
+                    </div>
+
+                    <div class="car-price">
+                        <strong>PKR 10 Crore</strong>
+                        <span>Sample price</span>
+                    </div>
+
+                    <button class="details-btn"
+                            data-car="Porsche 911 Carrera">
+                        View Details ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 4 -->
+
+            <article class="car-card"
+                     data-brand="Audi"
+                     data-name="Audi R8">
+
+                <div class="car-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=900&q=85"
+                        alt="Audi premium performance car"
+                        loading="lazy"
+                    >
+
+                    <span class="car-badge">PERFORMANCE</span>
+
+                    <button class="favorite"
+                            aria-label="Add Audi to favourites"
+                            aria-pressed="false">♡</button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <span class="car-category">PERFORMANCE</span>
+
+                    <h3>Audi R8</h3>
+
+                    <div class="car-specs">
+                        <span>⚙ Automatic</span>
+                        <span>⛽ Petrol</span>
+                    </div>
+
+                    <div class="car-price">
+                        <strong>PKR 8 Crore</strong>
+                        <span>Sample price</span>
+                    </div>
+
+                    <button class="details-btn"
+                            data-car="Audi R8">
+                        View Details ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 5 -->
+
+            <article class="car-card"
+                     data-brand="Toyota"
+                     data-name="Toyota Land Cruiser">
+
+                <div class="car-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=85"
+                        alt="Luxury SUV"
+                        loading="lazy"
+                    >
+
+                    <span class="car-badge">POPULAR</span>
+
+                    <button class="favorite"
+                            aria-label="Add Toyota to favourites"
+                            aria-pressed="false">♡</button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <span class="car-category">LUXURY SUV</span>
+
+                    <h3>Toyota Land Cruiser</h3>
+
+                    <div class="car-specs">
+                        <span>⚙ Automatic</span>
+                        <span>⛽ Petrol</span>
+                    </div>
+
+                    <div class="car-price">
+                        <strong>PKR 9 Crore</strong>
+                        <span>Sample price</span>
+                    </div>
+
+                    <button class="details-btn"
+                            data-car="Toyota Land Cruiser">
+                        View Details ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 6 -->
+
+            <article class="car-card"
+                     data-brand="Lamborghini"
+                     data-name="Lamborghini Huracan">
+
+                <div class="car-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=85"
+                        alt="Exotic supercar"
+                        loading="lazy"
+                    >
+
+                    <span class="car-badge">EXOTIC</span>
+
+                    <button class="favorite"
+                            aria-label="Add Lamborghini to favourites"
+                            aria-pressed="false">♡</button>
+
+                </div>
+
+                <div class="car-info">
+
+                    <span class="car-category">SUPERCAR</span>
+
+                    <h3>Lamborghini Huracan</h3>
+
+                    <div class="car-specs">
+                        <span>⚙ Automatic</span>
+                        <span>⛽ Petrol</span>
+                    </div>
+
+                    <div class="car-price">
+                        <strong>PKR 18 Crore</strong>
+                        <span>Sample price</span>
+                    </div>
+
+                    <button class="details-btn"
+                            data-car="Lamborghini Huracan">
+                        View Details ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <p id="noCars" class="no-cars" hidden>
+            No cars found. Try another search.
+        </p>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about section" id="about">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1100&q=85"
+                alt="Premium automobile"
+                loading="lazy"
+            >
+
+        </div>
+
+        <div class="about-content">
+
+            <span class="tag">ABOUT LUXE MOTORS</span>
+
+            <h2>
+                More Than Cars.
+                <span>A Lifestyle.</span>
+            </h2>
+
+            <p>
+                At Luxe Motors, we believe that finding a car
+                should be an exceptional experience. Our showroom
+                is designed for people who appreciate quality,
+                performance and timeless automotive design.
+            </p>
+
+            <div class="about-point">
+                <span>✓</span>
+                <p>Carefully selected premium vehicles.</p>
+            </div>
+
+            <div class="about-point">
+                <span>✓</span>
+                <p>Personalised assistance for every customer.</p>
+            </div>
+
+            <div class="about-point">
+                <span>✓</span>
+                <p>Support throughout your buying journey.</p>
+            </div>
+
+            <a href="#contact" class="btn">
+                Meet Our Team ↗
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section class="services section" id="services">
+
+        <div class="section-heading">
+
+            <span class="tag">THE LUXE EXPERIENCE</span>
+
+            <h2>Services Designed <span>Around You.</span></h2>
+
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+                <span><img src="./FITZONE/image/images (2).jpeg" alt="" width="auto" height="450"></span>
+                <h3>Test Drive</h3>
+                <p>Experience your favourite car before making a decision.</p>
+            </article>
+
+            <article class="service-card">
+                <span><img src="./FITZONE/image/images (1).jpeg" alt="" width="auto" height="450"></span>
+                <h3>Financing Assistance</h3>
+                <p>Explore financing options with eligible providers.</p>
+            </article>
+
+            <article class="service-card">
+                <span><img src="./FITZONE/image/images.jpeg" alt="" width="auto" height="450"></span>
+                <h3>Vehicle Exchange</h3>
+                <p>Discuss exchanging your current vehicle for another.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT / TEST DRIVE -->
+
+    <section class="contact section" id="contact">
+
+        <div class="contact-content">
+
+            <span class="tag">LET'S GET YOU BEHIND THE WHEEL</span>
+
+            <h2>Book Your <span>Test Drive.</span></h2>
+
+            <p>
+                Found a car you love? Send us your details
+                and preferred vehicle.
+            </p>
+
+            <div class="contact-detail">
+                <strong>☎ Phone</strong>
+                <p>+92 300 1234567</p>
+            </div>
+
+            <div class="contact-detail">
+                <strong>✉ Email</strong>
+                <p>sales@luxemotors.example</p>
+            </div>
+
+            <div class="contact-detail">
+                <strong>⌖ Showroom</strong>
+                <p>Karachi, Pakistan</p>
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="testDriveForm">
+
+            <h3>Request an Appointment</h3>
+
+            <label for="customerName">Full Name</label>
+
+            <input
+                id="customerName"
+                name="name"
+                type="text"
+                placeholder="Your full name"
+                required
+            >
+
+            <label for="customerEmail">Email Address</label>
+
+            <input
+                id="customerEmail"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                required
+            >
+
+            <label for="customerPhone">Phone Number</label>
+
+            <input
+                id="customerPhone"
+                name="phone"
+                type="tel"
+                placeholder="+92..."
+                required
+            >
+
+            <label for="selectedCar">Select a Car</label>
+
+            <select id="selectedCar" name="car" required>
+
+                <option value="">Choose your dream car</option>
+
+                <option>BMW M4 Competition</option>
+                <option>Mercedes-Benz S-Class</option>
+                <option>Porsche 911 Carrera</option>
+                <option>Audi R8</option>
+                <option>Toyota Land Cruiser</option>
+                <option>Lamborghini Huracan</option>
+
+            </select>
+
+            <label for="appointmentDate">Preferred Date</label>
+
+            <input
+                id="appointmentDate"
+                name="date"
+                type="date"
+                required
+            >
+
+            <button type="submit" class="btn">
+                Request Test Drive ↗
+            </button>
+
+            <p id="formMessage" role="status"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <a href="#home" class="logo">
+            LUXE<span>MOTORS</span>
+            <small>PREMIUM AUTOMOBILES</small>
+        </a>
+
+        <p>
+            Exceptional automobiles.
+            Unforgettable experiences.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#cars">Our Cars</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Luxe Motors. Demo showroom website.
+        </p>
+
+    </footer>
+
+
+    <!-- CAR DETAILS POPUP -->
+
+    <dialog id="carDialog" class="car-dialog">
+
+        <button id="closeDialog"
+                class="close-dialog"
+                aria-label="Close details">✕</button>
+
+        <span class="tag">LUXE MOTORS COLLECTION</span>
+
+        <h2 id="dialogCarName">Car Details</h2>
+
+        <p>
+            Contact our showroom to confirm availability,
+            specifications and the current asking price.
+        </p>
+
+        <a href="#contact" id="dialogBook" class="btn">
+            Book a Test Drive ↗
+        </a>
+
+    </dialog>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
